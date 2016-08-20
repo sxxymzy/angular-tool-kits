@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+    <link href="../src/progress-wizard.min.css" rel="stylesheet">
+
+    <script src="../lib/angular.js"></script>
+    <script src="../src/angular-step-progress.js"></script>
+</head>
+<body ng-app="app">
+<script>
+    angular.module("app", ["stepProgress"])
+            .controller("MainCtrl", function () {
+                this.current_step_id = 0;
+                this.next_step = function () {
+                    this.current_step_id++;
+                };
+                this.last_step = function () {
+                    this.current_step_id--;
+                }
+
+            })
+</script>
+<div ng-controller="MainCtrl as ctrl">
+
+    <step-list class="bar bar-subheader" current-step="ctrl.current_step_id">
+        <step-item step-id="0" name="Step 1"></step-item>
+        <step-item step-id="1" name="Step 2"></step-item>
+        <step-item step-id="2" name="Step 3"></step-item>
+    </step-list>
+
+    <button ng-click="ctrl.next_step()">next</button>
+    <button ng-click="ctrl.last_step()">last</button>
+</div>
+</body>
+</html>

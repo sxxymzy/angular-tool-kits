@@ -1,0 +1,25 @@
+.red-bubble:after {
+    position: absolute;
+    top: 10px;
+    border-radius: 10px;
+    width: auto;
+    min-width: 14px;
+    height: 14px;
+    line-height: 14px;
+    text-align: center;
+    background: #ff4845;
+    content: '';
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.bubble-content:after {
+    padding: 1px;
+    background: red;
+    content: attr(counter);
+}
+
+.red-bubble-hide:after {
+    display: none;
+}
