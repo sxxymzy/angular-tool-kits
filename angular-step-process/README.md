@@ -1,4 +1,4 @@
-angular-red-bubble
+angular-step-process
 ----
 
 Dependency

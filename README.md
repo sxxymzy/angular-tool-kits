@@ -1,11 +1,11 @@
 # Angular-tool-kits
 
-Angular tool kits from work for reuse
+Angular tool kits from my work for reuse
 
 # Tool list
 
 - [angular-red-bubble](./angular-red-bubble/)
 - [angular-step-process](./angular-step-process)
-- [ionic-network-bar](./ionic-network-bar)
+- [ionic-network-bar](./ionic-network-bar) TODO
 
-Feel free to clone, modify, or use in anywhere! Any pull request is welcome! 
+Feel free to clone, modify, or use in anywhere! Any contribute is welcome!
